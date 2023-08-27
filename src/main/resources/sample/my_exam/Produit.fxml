@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="652.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.my_exam.Controllers.ProduitController">
+    <children>
+        <TextField fx:id="text_libelle" layoutX="112.0" layoutY="104.0" prefHeight="25.0" prefWidth="190.0" />
+        <TableView fx:id="tableProduit" blendMode="MULTIPLY" layoutY="360.0" onMouseClicked="#Remplir" prefHeight="229.0" prefWidth="652.0">
+            <columns>
+                <TableColumn fx:id="col_id" prefWidth="62.0" text="ID" />
+                <TableColumn fx:id="col_libelle" editable="false" prefWidth="177.0" sortable="false" text="Libellé" />
+            <TableColumn fx:id="col_Quantite" prefWidth="141.0" text="Quantité" />
+            <TableColumn fx:id="col_Pu" prefWidth="141.0" text="Prix Unitaire" />
+            <TableColumn fx:id="col_Categorie" prefWidth="141.0" text="Catégorie" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnAdd" layoutX="369.0" layoutY="104.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: blue;" text="Ajouter" textFill="WHITE" />
+        <Button fx:id="btnUpdate" layoutX="488.0" layoutY="104.0" mnemonicParsing="false" onAction="#modifier" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: yellow;" text="Modifier" textFill="#4d4646" />
+        <Button fx:id="btnDelete" layoutX="369.0" layoutY="165.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: red;" text="Supprimer" textFill="WHITE" />
+        <Button fx:id="btnClear" layoutX="488.0" layoutY="165.0" mnemonicParsing="false" onAction="#effacer" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: gray;" text="Clear" textFill="WHITE" />
+        <Label layoutX="30.0" layoutY="104.0" prefHeight="25.0" prefWidth="70.0" text="Libelle" />
+        <TextField fx:id="text_id" layoutX="365.0" layoutY="23.0" prefHeight="25.0" prefWidth="245.0" />
+      <TextField fx:id="text_Quantite" layoutX="112.0" layoutY="167.0" prefHeight="25.0" prefWidth="190.0" />
+      <Label layoutX="29.0" layoutY="166.0" prefHeight="25.0" prefWidth="70.0" text="Quantité" />
+      <TextField fx:id="text_Pu" layoutX="111.0" layoutY="227.0" prefHeight="25.0" prefWidth="190.0" />
+      <Label layoutX="29.0" layoutY="227.0" prefHeight="25.0" prefWidth="70.0" text="Prix Unitaire" />
+      <Label layoutX="29.0" layoutY="289.0" prefHeight="25.0" prefWidth="70.0" text="Catégorie" />
+      <TextField fx:id="Text_Rechercher" layoutX="349.0" layoutY="290.0" onAction="#RechercherProduit" prefHeight="25.0" prefWidth="277.0" />
+      <Label layoutX="351.0" layoutY="272.0" prefHeight="18.0" prefWidth="70.0" text="Rechercher" />
+      <ComboBox fx:id="Combo_Categorie" layoutX="111.0" layoutY="290.0" prefHeight="25.0" prefWidth="190.0" />
+      <Label fx:id="LbErrors" layoutX="112.0" layoutY="199.0" prefHeight="17.0" prefWidth="253.0" />
+
+    </children>
+</AnchorPane>

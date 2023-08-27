@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="661.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.my_exam.Controllers.StatistiqueController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="57.0" layoutY="33.0" prefHeight="63.0" prefWidth="535.0" text="Diagramme circulaure du nombre de présence de produit par catégorie" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Serif Bold" size="21.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="diagramme" layoutX="59.0" layoutY="103.0" prefHeight="408.0" prefWidth="522.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="559.0" prefWidth="676.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.my_exam.Controllers.RegisterController">
+
+    <children>
+        <Label alignment="CENTER" layoutX="190.0" layoutY="42.0" prefHeight="45.0" prefWidth="314.0" text="Page d'identifaction">
+            <font>
+                <Font name="Tw Cen MT Condensed Bold" size="30.0" />
+            </font></Label>
+        <Label layoutX="102.0" layoutY="129.0" text="Nom">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <Label layoutX="99.0" layoutY="177.0" text="Prénom">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Label>
+        <TextField fx:id="Txt_Nom" layoutX="237.0" layoutY="125.0" prefHeight="25.0" prefWidth="283.0" />
+        <Button fx:id="Confirm" alignment="CENTER" contentDisplay="CENTER" layoutX="228.0" layoutY="479.0" mnemonicParsing="false" onAction="#Confirmation" prefHeight="25.0" prefWidth="139.0" style="-fx-background-color: green;" text="Confirmer" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font></Button>
+        <Label fx:id="statusLabel" layoutX="176.0" layoutY="270.0" text="" />
+        <Label layoutX="97.0" layoutY="232.0" text="Téléphone">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="99.0" layoutY="289.0" text="E-mail">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="96.0" layoutY="343.0" text="Login">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <Label layoutX="93.0" layoutY="395.0" text="Mot de passe">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <TextField fx:id="Txt_Prenom" layoutX="237.0" layoutY="173.0" prefHeight="25.0" prefWidth="283.0" />
+        <TextField fx:id="Txt_Telephone" layoutX="236.0" layoutY="228.0" prefHeight="25.0" prefWidth="283.0" />
+        <TextField fx:id="Txt_email" layoutX="236.0" layoutY="285.0" prefHeight="25.0" prefWidth="283.0" />
+        <TextField fx:id="Txt_Login" layoutX="233.0" layoutY="339.0" prefHeight="25.0" prefWidth="283.0" />
+        <TextField fx:id="Txt_Password" layoutX="233.0" layoutY="391.0" prefHeight="25.0" prefWidth="283.0" />
+      <Label fx:id="LabelConfirm" layoutX="280.0" layoutY="431.0" prefHeight="31.0" prefWidth="276.0">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+    </children>
+
+</AnchorPane>

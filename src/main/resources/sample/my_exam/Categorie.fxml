@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="590.0" prefWidth="650.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.my_exam.Controllers.CategorieController">
+    <children>
+        <TextField fx:id="text_libelle" layoutX="216.0" layoutY="63.0" prefHeight="25.0" prefWidth="271.0" />
+        <TableView fx:id="tableCategorie" layoutX="-2.0" layoutY="275.0" onMouseClicked="#charge" prefHeight="314.0" prefWidth="650.0">
+            <columns>
+                <TableColumn fx:id="col_id" prefWidth="154.0" text="ID Catégorie" />
+                <TableColumn fx:id="col_libelle" prefWidth="495.0" text="Libellé" />
+            </columns>
+        </TableView>
+        <Button fx:id="btnAdd" layoutX="246.0" layoutY="124.0" mnemonicParsing="false" onAction="#ajouter" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: blue;" text="Ajouter" textFill="WHITE" />
+        <Button fx:id="btnUpdate" layoutX="365.0" layoutY="124.0" mnemonicParsing="false" onAction="#modifier" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: yellow;" text="Modifier" textFill="#4d4646" />
+        <Button fx:id="btnDelete" layoutX="246.0" layoutY="185.0" mnemonicParsing="false" onAction="#supprimer" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: red;" text="Supprimer" textFill="WHITE" />
+        <Button fx:id="btnClear" layoutX="365.0" layoutY="185.0" mnemonicParsing="false" onAction="#effacer" prefHeight="25.0" prefWidth="108.0" style="-fx-background-color: gray;" text="Clear" textFill="WHITE" />
+        <Label layoutX="59.0" layoutY="63.0" prefHeight="25.0" prefWidth="167.0" text="Entrer une catégorie">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="text_id" layoutX="365.0" layoutY="23.0" prefHeight="25.0" prefWidth="245.0" />
+
+    </children>
+</AnchorPane>
